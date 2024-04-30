@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.nav-work {
+    background-color: #e7f0ff;
+    padding: 1rem 4rem 0px 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .nav-work-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-work-links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .nav-work-btn{
+    background-color: #7070FD;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .nav-work-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+    }
+
+    .nav-work-links a {
+      padding: 10px 20px;
+      border-bottom: 1px solid white;
+      color: white;
+    }
+
+    .nav-work-links button {
+      display: block;
+      width: 100%;
+    }
+
+    .nav-work-links.active {
+      display: flex;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  }
+
+
+.work-container {
+    padding: 0 4rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(231,240,255,1) 55%);
+}
+
+.work-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+    align-items: center;
+    padding-top: 4rem;
+}
+.work-image img {
+    width: 100%;
+}
+.work-h5 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 70px;
+}
+.work-h5-second{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 70px;
+}
+
+.work-p-one{
+    font-family: "Inter", sans-serif;   
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 33px;
+    padding-top: 1rem;
+}
+.work-p{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 1rem;
+}
+.work-span {
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.work-second-section {
+    padding-top: 6rem;
+}
+/* .work-span img {
+    width: 100%;
+} */
+.work-buttons {
+    padding-top: 5rem;
+}
+.work-first-button {
+    padding: 10px 30px;
+    background-color: #7070FD;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.work-second-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid #7070FD;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+ 
+@media (max-width: 768px) {
+    .work-header {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .work-span {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .work-span img {
+        padding-top: 1rem;
+    }
+    .ipad {
+        padding-top: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .work-h5 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .work-h5-second {
+        font-size: 36px;
+        line-height: 50px;
+        padding-top: 1rem;
+    }
+    .work-p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .work-span {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 485px) {
+    .work-second-button {
+        margin-top: 1rem;
+    }
+}
+
+
+
+

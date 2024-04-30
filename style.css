@@ -754,13 +754,6 @@ width: 95%;
     margin-top: 2rem; 
 }
 
-
-
-.container{
-	max-width: 1170px;
-	margin:auto;
-  padding: 3rem 0;
-}
 .row{
 	display: flex;
 	flex-wrap: wrap;

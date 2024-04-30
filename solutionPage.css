@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.solution-one {
+    height: auto;
+    padding: 5rem 4rem;
+}
+
+.solution-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.solution-text h2 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 71px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.solution-text p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+.solution-grid {
+    height: auto;
+    padding: 5rem 4rem;
+}
+.container-one {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10rem;
+    background-color: #fff;
+    padding: 10px;
+}
+.con-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.col-grid-p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 59px;
+    font-weight: 700;
+    color: #7070FD;
+}
+
+.col-grid-p-two {
+    color: #0A0A0A;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+}
+
+@media (max-width: 1435px) {
+    .container-one {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 1rem;
+    }
+}
+@media (max-width: 810px) {
+    .container-one {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .container-one {
+        grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 2rem;
+    }
+}
+
+/* Additional CSS to ensure proper display of text */
+.col-grid-p,
+.col-grid-p-two {
+    text-align: center;
+}
+
+.section--four {
+    height: auto;
+    padding: 5rem 4rem;
+}
+
+.section--four-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 10rem;
+}
+
+.sec-four-grid {
+    text-align: center;
+}
+
+.sec-four-grid img {
+    height: auto;
+    width: 69px;
+}
+
+.sec-four-grid h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sec-four-grid p {
+    color: #9FA5B9;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 600px) {
+    .section--four-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 3rem;
+    }
+}

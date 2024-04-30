@@ -4,11 +4,96 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 
+.nav {
+    background-color: #fff;
+    padding: 1rem 4rem 0px 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .nav-btn{
+    background-color: #7070FD;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+    }
+
+    .nav-links a {
+      padding: 10px 20px;
+      border-bottom: 1px solid white;
+      color: white;
+    }
+
+    .nav-links button {
+      display: block;
+      width: 100%;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  }
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
-    padding: 20px 4rem;
+    padding: 5rem 4rem;
 }
 
 .card {
@@ -24,7 +109,7 @@
     border-radius: 23px;
     /* text-align: center; */
     height: auto;
-    margin-top: 2.7rem;
+    margin-top: 2.8rem;
 }
 .card-body {
     padding-top: 1rem;
@@ -99,10 +184,20 @@
     height: auto;
     padding-left: 2rem;
 }
+.rounded-div-4{
+    border-radius: 23px;
+    background-color: white;
+    height: auto;
+    padding-left: 2rem;
+    margin-top: -.6rem;
+}
 .last-text{
     width: 14rem;
 }
 .card-footer {
+    text-align: center;
+}
+.card-footer-1 {
     text-align: center;
 }
 
@@ -118,7 +213,7 @@
     color: #7070FD;
     padding: 10px 40px;
     cursor: pointer;
-    margin: 7.5rem 4rem 1rem 4rem;
+    margin: 4.3rem 4rem 1.7rem 4rem;
 }
 .card-footer-1 button {
     background-color: white;
@@ -132,7 +227,7 @@
     color: #7070FD;
     padding: 10px 40px;
     cursor: pointer;
-    margin: 4rem 4rem 1rem 4rem;
+    margin: 4rem 4rem 0rem 4rem;
 }
 .card-footer-2 button {
     background-color: #7070FD;
@@ -148,3 +243,320 @@
     cursor: pointer;
     margin: 17.3rem 4rem 1rem 4rem;
 }
+
+.toggle-section {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 5rem 4rem;
+}
+
+.toggle-text-one {
+    font-size: 55px;
+    line-height: 71px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+}
+
+.toggle-text-two {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 auto;
+}
+.togble-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tog-text-one {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    padding: 1rem;
+}
+.tog-text-two {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    padding: 1rem;
+    margin-top: 1.2rem;
+}
+
+.tog-text-two span {
+    color: #7070FD;
+    
+}
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+    border: 1px solid gray;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #7070FD;
+    transition: .4s;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 0 4px #7070FD;
+    outline: none;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 600px){
+    .toggle-text-one {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  .image-section {
+    background-image: url(/assets/Vector.png);
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      height: auto;
+      background-color: #7070FD;
+      margin: 3rem 4rem;
+      border-radius: 35px;
+  }
+  .image-text {
+    font-family: "DM Sans", sans-serif; 
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    color: white;
+  }
+
+  .image-button button {
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  .image-div {
+    padding: 4rem;
+  }
+  .image-div-image {
+    border-bottom-right-radius:35px;
+    width: auto;
+    height: auto;
+  }
+  .image-image {
+    padding-top: 2rem;
+  }
+
+
+  @media (min-width: 1050px) {
+    .image-section {
+      flex-direction: row;
+    }
+  }
+  
+  .image-div {
+    order: 1; 
+  }
+  
+  .image-image {
+    order: 2;
+  }
+  
+  @media (min-width: 768px) {
+    .inputs-div, .input-input {
+      flex: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .image-div-image {
+        width: 100%;
+    }
+    .image-text {
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .image-button {
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .image-text {
+        text-align: center;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .image-button button {
+        padding: 10px 20px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .image-text {
+        text-align: center;
+        font-size: 20px;
+        line-height: 35px;
+    }
+  }
+
+  .accordion-section {
+    height: auto;
+    padding: 5rem 0rem;
+  }
+  
+  .accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  
+  .accordion-item {
+    background-color: #f6f6f6;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .accordion-text {
+    text-align: center;
+  }
+
+  .accordion-text p {
+    font-family: "DM Sans", sans-serif; 
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 71px;
+    padding-bottom: .5rem;
+  }
+
+  .accordion-text button {
+    background-color: #7070FD;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .accordion-item-body-content {
+    padding: 1rem;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 200;
+    font-family: "DM Sans", sans-serif; 
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+  
+  @media(max-width:767px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .accordion-text p {
+      font-size: 36px;
+      line-height: 45px;
+    }
+    .accordion-text button {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px 20px;
+    }
+    .accordion-item-header {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }

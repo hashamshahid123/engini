@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.blog-container {
+    padding: 0 4rem;
+}
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 5rem 0;
+}
+.blog-card-one {
+    border: 1px solid #7070FD;
+    border-radius: 18px;
+}
+.blog-span {
+    font-family: "Inter", sans-serif; 
+    color: #7070FD;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 23px;
+}
+
+.blog-p-one {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+.blog-p-two {
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 23px;
+}
+.blog-btn {
+    padding: 10px 10px;
+    width: 100%;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid #7070FD;
+    color: #7070FD;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.blog-button {
+    text-align: center;
+}
+.header-blog-text {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.header-blog-text-h4 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 70px;
+}
+
+.header-blog-text-p {
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 1rem;
+}
+
+.blog-image img {
+    width: 100%;
+    padding: 1rem;
+}
+.blog-text {
+    padding: 0 1rem 1rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .blog-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .blog-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
+.single-card-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #7070FD;
+    border-radius: 18px;
+}
+.single-image img {
+    padding: 1rem;
+    width: 100%;
+}
+.single-text {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.single-text-p-one {
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+    font-style: italic;
+    color: #7070FD;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.single-text-p-two {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 44px;
+    padding-top: 3rem;
+}
+
+.single-text-p-three {
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 3rem;
+}
+
+.single-card-button {
+    padding-top: 16rem;
+}
+.single-card-button  button{
+    padding: 10px 30px;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7070FD;
+    border: 1px solid #7070FD;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (max-width: 1072px) {
+    .single-card-blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-card-button {
+        padding-top: 3rem;
+    }
+}
