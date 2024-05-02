@@ -502,14 +502,15 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,244,255,1) 10
     align-items: center;
     height: auto;
     background-color: #7070FD;
-    margin: 3rem 4rem;
+    margin: 3rem 2rem;
     border-radius: 35px;
+    padding: 3rem;
 }
 
 .inputs-div {
   width: auto;
   height: auto;
-  padding: 4rem;
+  /* padding: 4rem; */
   
 }
 .input-btn {
